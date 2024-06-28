@@ -1,0 +1,58 @@
+<!-- <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div formGroupName="twitter-clone">
+      <div>
+        <label>Name</label>
+        <input type="text" [formControlName]="'name'">
+      </div>
+      <div *ngIf="form.get('personalData.name')?.touched && !form.get('personalData.name')?.valid">
+         <p *ngIf="form.get('personalData.name')?.hasError('unallowedName')">Name is not Allowed !!!</p> -->
+      <!-- </div>
+      <div>
+        <label>UserName</label>
+        <input type="text" formControlName="UserName">
+        <div *ngIf="form.get('personalData.email')?.touched && !form.get('personalData.email')?.valid">
+           <p *ngIf="form.get('personalData.email')?.hasError('required')">Email is required</p>
+          <p *ngIf="form.get('personalData.email')?.hasError('email')">Email is not Valid</p> -->
+        <!-- </div>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="text" formControlName="email">
+        <div *ngIf="form.get('personalData.email')?.touched && !form.get('personalData.email')?.valid"> -->
+          <!-- <p *ngIf="form.get('personalData.email')?.hasError('required')">Email is required</p>
+          <p *ngIf="form.get('personalData.email')?.hasError('email')">Email is not Valid</p> -->
+        <!-- </div>
+      </div>
+    </div>
+  </form>  -->
+
+
+ 
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div formGroupName="twitterClone">
+      <div>
+        <label>Name</label>
+        <input type="text" formControlName="name">
+      </div>
+      <div *ngIf="form.get('twitterClone.name')?.touched && !form.get('twitterClone.name')?.valid">
+        <!-- Display error messages if needed -->
+        <!-- <p *ngIf="form.get('twitterClone.name')?.hasError('required')">Name is required</p> -->
+      </div>
+      <div>
+        <label>UserName</label>
+        <input type="text" formControlName="UserName">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="text" formControlName="email">
+        <div *ngIf="form.get('twitterClone.email')?.touched && !form.get('twitterClone.email')?.valid">
+          <!-- Display error messages if needed -->
+          <!-- <p *ngIf="form.get('twitterClone.email')?.hasError('required')">Email is required</p>
+          <p *ngIf="form.get('twitterClone.email')?.hasError('email')">Email is not valid</p> -->
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  
+  
